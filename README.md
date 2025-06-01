@@ -209,7 +209,7 @@ This cheatsheet provides essential Docker commands and concepts with practical e
 ### 1. **Building and Running a Node.js App**
 
 Create a `Dockerfile` for a Node.js application:  
-<xaiArtifact artifact_id="f19dbd2c-2e3a-4f9d-8427-7736469041a8" artifact_version_id="ffb63255-9419-4f9d-8839-2f42c8fe5357" title="Node.js Dockerfile" contentType="text/plain">
+```sh
 FROM node:18
 WORKDIR /app
 COPY package*.json ./
@@ -217,3 +217,4 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 CMD ["npm", "start"]
+```
